@@ -1,0 +1,121 @@
+/* CSS code for the front page
+** added by criscom
+** on all sections on frontpage
+*/
+
+.front
+{
+    .region-highlighted // style Ticketvorverkauf and Zur Umfrage buttons
+    {
+        .block
+        {
+            float: right;
+            p
+            {
+                // float: left;
+                display: inline-block;
+
+                @include breakpoint($iphone4landscape)
+                {
+                    display: block;
+
+                    margin-top: 0;
+                }
+                .btn-primary
+                {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    h2
+    {
+        // all headers on front 
+        color: $red;
+        // header break for long headers 
+
+        @include breakpoint($iphone4landscape)
+        {
+            @include hyphens;
+        }
+    }
+}
+
+.front .main h1
+{
+    width: 99px;
+    height: 98px;
+
+    background-image: image-url('logo-news.png');
+    background-repeat: no-repeat;
+    background-size: 99px 98px;
+    // Substitute the header title "Tricky women" with news logo
+
+    @include hide-text;
+    // Hide icon on small screens
+    @include breakpoint($iphone4landscape)
+    {
+        // height: 130px;
+        // background-position: 0 30px;
+    }
+}
+
+.front
+{
+    .views-row
+    {
+        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
+        padding-bottom: 32rem;
+        padding-bottom: 2rem;
+
+        border-bottom: 1px solid black;
+    }
+    .views-row-last
+    {
+        margin-bottom: 0;
+        padding-bottom: 0;
+
+        border-bottom: 0;
+    }
+}
+
+
+
+// Vimeo video frontpage
+
+.front iframe
+{
+    @include breakpoint($iphone5-6)
+    {
+        width: 100%;
+    }
+}
+
+// links front
+
+.front .view p a
+{
+    @extend .inline-link;
+}
+
+ul.download-file
+{
+    padding-left: 0;
+
+    @include no-bullets;
+    li
+    {
+        a
+        {
+            @extend .inline-link;
+            @extend %base-font;
+        }
+    }
+}
+
+// align links to left
+.front blockquote
+{
+    margin-left: 0;
+}
