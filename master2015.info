@@ -58,12 +58,12 @@ stylesheets[all][] = node.css
 
 ; Styles for bootstrap menu
 stylesheets[all][] = css/bootstrap/bootstrap.min.css
-stylesheets[all][] = css/bootstrap/jquery.smartmenus.bootstrap.css
+;stylesheets[all][] = css/bootstrap/jquery.smartmenus.bootstrap.css
 
-; Styles for smartmenu
-stylesheets[all][] = css/smartmenus/sm-core-css.css
-stylesheets[all][] = css/smartmenus/sm-blue/sm-blue.css
-stylesheets[all][] = css/smartmenus/sm-mint/sm-mint.css
+; Styles for smartmenu ==> not used; using nice menus instead
+;stylesheets[all][] = css/smartmenus/sm-core-css.css
+;stylesheets[all][] = css/smartmenus/sm-blue/sm-blue.css
+;stylesheets[all][] = css/smartmenus/sm-mint/sm-mint.css
 
 ; Styles for isotope filter
 stylesheets[all][] = vendor/isotope/jquery.isotope.css

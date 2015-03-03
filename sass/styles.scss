@@ -57,7 +57,12 @@
 
 /* Added by criscom */
 @import "components/flexslider";
-@import "components/onlinebestellung";
+
+/* Adding library folder with sass-globbing */
+@import "library/*";
+
+/* Adding sl-components folder with sass-globbing */
+@import "sl-components/*";
 
 /* @TODO: Refactor print states into their respective components. */
 @import "components/print";

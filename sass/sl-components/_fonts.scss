@@ -1,12 +1,7 @@
 /* CSS code for the fonts integration
 ** added by criscom
 ** this file contains general font declarations that apply to fonts across the site
-1. UBUNTU MEDIUM 18PT
-2. OSWALD BOLD 44PT
-3. UBUNTU LIGHT 18PT / LINE-HEIGHT 24
-4. OSWALD BOLD 30PT
-5. UBUNTU BOLD 24PT
-6. UBUNTU LIGHT 24PT
+1. 
 
 */
 
@@ -15,9 +10,7 @@ h2,
 h2 a,
 h3
 {
-    text-transform: uppercase;
-
-    @extend %header-large;
+ 
 }
 
 // All paragraphs with the 'p' tag
@@ -48,17 +41,3 @@ div.download-file a
     @extend .inline-link;
 }
 
-// film header
-
-.film-header
-{
-    font-size: 1.875 * $base-font-size;
-
-    margin-top: 0;
-    margin-bottom: 8px;
-    margin-bottom: .5rem;
-
-    text-transform: lowercase;
-
-    color: red;
-}
