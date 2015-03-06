@@ -11,7 +11,7 @@
 {
     .responsive-menus
     {
-        display: none;
+        // display: none;
     }
 }
 
@@ -19,7 +19,7 @@
 
 ul.nice-menu
 {
-    margin-top: 50px;
+    // margin-top: 50px;
 }
 
 ul.nice-menu li
@@ -48,7 +48,7 @@ ul.nice-menu li
         text-transform: uppercase;
 
         @extend %base-font;
-        @include link-colors($normal: white, $hover: $red, $active: $red);
+        @include link-colors($normal: $black, $hover: $red !important);
         @extend %medium-weight;
         padding-right: 0 !important;
     }
@@ -72,7 +72,7 @@ ul.nice-menu-down
 
 ul.nice-menu ul
 {
-    top: 2.2em;
+    // top: 2.2em;
 
     border-top: 0;
     background-color: white;

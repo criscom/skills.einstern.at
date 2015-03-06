@@ -15,7 +15,7 @@
 /* START: SMARTMENUS */
     (function($) {
     // initialise smartmenus for main menu
-    $('#main-menu').smartmenus();
+    // $('#main-menu').smartmenus();
     })(jQuery);
 /* END: SMARTMENUS */
 
