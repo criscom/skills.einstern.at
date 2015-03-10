@@ -28,3 +28,10 @@
     font-size: 2.75 * $base-font-size;
     font-weight: 700;
 }
+
+%base-background {
+    background-color: $breadcrumb-bg;
+    padding: 16px;
+    padding: 1rem;
+    border-radius: 4px;
+}
