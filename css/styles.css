@@ -2655,13 +2655,15 @@ html[xmlns] .slides {
 ** use the @extend directive to extend with placeholders
 */
 /* line 6, ../sass/library/_placeholders.scss */
-p, div.download-file a, ul.language-switcher-locale-url li a, ul.nice-menu li a {
+body, [role='main'] p,
+[role='main'] ul li, div.download-file a, ul.language-switcher-locale-url li a, ul.nice-menu li a {
   font-size: 18px;
   font-size: 1.125rem;
 }
 
 /* line 12, ../sass/library/_placeholders.scss */
-p {
+body, [role='main'] p,
+[role='main'] ul li {
   font-weight: 300;
 }
 
@@ -2713,7 +2715,7 @@ p {
 1. 
 
 */
-/* line 33, ../sass/sl-components/_fonts.scss */
+/* line 34, ../sass/sl-components/_fonts.scss */
 .inline-link, div.download-file a, .not-front div p a {
   color: red;
 }
@@ -3003,6 +3005,45 @@ ul.nice-menu ul li a:active {
     margin: 1rem 0;
   }
 }
+/* CSS code for wohnung detail page
+** added by criscom
+** /wohnung/wohnung-1-4-zimmer-wohnung-4-er-wg
+*/
+@media (min-width: 569px) {
+  /* line 10, ../sass/sl-components/_wohnung.scss */
+  .node-wohnung .group-left {
+    width: 68%;
+  }
+  /* line 14, ../sass/sl-components/_wohnung.scss */
+  .node-wohnung .group-right {
+    width: 30%;
+    margin-left: 2%;
+  }
+}
+@media (max-width: 568px) {
+  /* line 22, ../sass/sl-components/_wohnung.scss */
+  .node-wohnung .group-left {
+    width: 100%;
+  }
+  /* line 26, ../sass/sl-components/_wohnung.scss */
+  .node-wohnung .group-right {
+    width: 100%;
+  }
+}
+/* line 31, ../sass/sl-components/_wohnung.scss */
+.node-wohnung .group-left {
+  float: left;
+}
+/* line 35, ../sass/sl-components/_wohnung.scss */
+.node-wohnung .group-right {
+  float: right;
+}
+
+/* line 42, ../sass/sl-components/_wohnung.scss */
+.group-right .field-name-title h2 {
+  margin-top: 0;
+}
+
 /* @TODO: Refactor print states into their respective components. */
 /**
  * @file

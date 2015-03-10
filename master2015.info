@@ -99,6 +99,8 @@ scripts[] = js/smartmenus/jquery.smartmenus.bootstrap.min.js
 scripts[] = js/flexslider.js
 scripts[] = js/script.js
 
+; Panels layouts. You can place multiple layouts under the "layouts" folder.
+plugins[panels][layouts] = layouts
 
 ; This section lists the regions defined in Zen's default page.tpl.php and
 ; maintenance-page.tpl.php files. The name in brackets is the machine name of

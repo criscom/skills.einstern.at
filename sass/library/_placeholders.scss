@@ -3,21 +3,21 @@
 ** use the @extend directive to extend with placeholders
 */
 
-%base-font
+%base-font-size
 {
     font-size: 18px;
     font-size: 1.125rem;
 }
 
-%base-weight {
+%base-font-weight {
     font-weight: 300;
 }
 
-%medium-weight {
+%medium-font-weight {
     font-weight: 500;
 }
 
-%bold-weight {
+%bold-font-weight {
     font-weight: 700;
 }
 

@@ -25,8 +25,8 @@ ul.language-switcher-locale-url
 
             color: white;
 
-            @extend %base-font;
-            @extend %medium-weight;
+            @extend %base-font-size;
+            @extend %medium-font-weight;
             @include link-colors($normal: white, $hover: $red, $active: $red);
         }
     }
