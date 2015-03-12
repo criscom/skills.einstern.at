@@ -3602,12 +3602,12 @@ h1.object-title:hover,
 .field-name-field-object-reference {
   padding-bottom: 16px;
   padding-bottom: 1rem;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #777777;
 }
 
 /* line 79, ../sass/sl-components/_wohnung.scss */
 .node-wohnung .group-top {
-  margin-bottom: 24px;
+  margin-bottom: 25px;
   margin-bottom: 1.5rem;
 }
 
@@ -3617,8 +3617,8 @@ h1.object-title:hover,
   margin: 1.5rem 0 1rem;
   padding: 24px 0;
   padding: 1.5rem 0;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 1px solid #777777;
+  border-bottom: 1px solid #777777;
 }
 /* line 94, ../sass/sl-components/_wohnung.scss */
 .group-wrapper-info .btn.availability,
@@ -3768,11 +3768,25 @@ ul.field-slideshow-pager li {
   margin-top: 1.5rem;
   padding-top: 16px;
   padding-top: 1rem;
-  border-top: 1px solid white;
+  border-top: 1px solid #777777;
 }
 /* line 207, ../sass/sl-components/_wohnung.scss */
 .node-wohnung .field-name-field-page-reference h2 {
   margin-top: 0;
+}
+
+/* line 214, ../sass/sl-components/_wohnung.scss */
+.field-name-field-text-links ul {
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  -webkit-justy-content: space-around;
+  display: flex;
+  flex-flow: row wrap;
+  justy-content: space-around;
+}
+/* line 220, ../sass/sl-components/_wohnung.scss */
+.field-name-field-text-links ul li {
+  width: 250px;
 }
 
 /* @TODO: Refactor print states into their respective components. */

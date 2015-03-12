@@ -65,7 +65,7 @@ h1.object-title,
     padding-bottom: 16px;
     padding-bottom: 1rem;
 
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid $gray-light;
 }
 
 .node-wohnung
@@ -78,7 +78,7 @@ h1.object-title,
     }
     .group-top
     {
-        margin-bottom: 24px;
+        margin-bottom: 25px;
         margin-bottom: 1.5rem;
     }
 }
@@ -89,8 +89,8 @@ h1.object-title,
     padding: 24px 0;
     padding: 1.5rem 0;
 
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 1px solid $gray-light;
+    border-bottom: 1px solid $gray-light;
     .btn.availability,
     .field-name-wohnung-provisionsfrei
     {
@@ -203,10 +203,21 @@ ul.field-slideshow-pager
         padding-top: 16px;
         padding-top: 1rem;
 
-        border-top: 1px solid white;
+        border-top: 1px solid $gray-light;
         h2
         {
             margin-top: 0;
         }
+    }
+}
+
+.field-name-field-text-links ul {
+@include flexbox((
+    display: flex,
+    flex-flow: row wrap,
+    justy-content: space-around
+  ));
+    li {
+        width: 250px;
     }
 }
