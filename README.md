@@ -7,6 +7,8 @@ Theme: Zen 6.x-dev
 Display suite: yes  
 Menu: Nice menus  
 
+###Main development snapshot for drupal web sites
+
 ###20150303
 
 1. Disabling smartmenus
