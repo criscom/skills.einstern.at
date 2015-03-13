@@ -3209,7 +3209,7 @@ body, [role='main'] p,
 }
 
 /* line 32, ../sass/library/_placeholders.scss */
-.node-wohnung .group-top,
+.center-wrapper.one .panel-panel, .center-wrapper.two .panel-col-first, .center-wrapper.two .panel-col-last, .node-wohnung .group-top,
 .node-wohnung .group-left,
 .node-wohnung .group-right {
   background-color: #f5f5f5;
@@ -3551,6 +3551,74 @@ ul.nice-menu ul li a:active {
     margin: 1rem 0;
   }
 }
+/* CSS code for über uns detail page
+** PANEL page
+** added by criscom
+** /panel-two-two
+*/
+/* line 6, ../sass/library/_clearfix.scss */
+.center-wrapper.one:before {
+  content: '';
+  display: table;
+}
+/* line 11, ../sass/library/_clearfix.scss */
+.center-wrapper.one:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 10, ../sass/sl-components/_ueber-uns.scss */
+.center-wrapper.one h2 {
+  margin-top: 0;
+}
+/* line 13, ../sass/sl-components/_ueber-uns.scss */
+.center-wrapper.one h2:hover {
+  color: #428bca;
+}
+/* line 18, ../sass/sl-components/_ueber-uns.scss */
+.center-wrapper.one .panel-panel {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 767px) {
+  /* line 18, ../sass/sl-components/_ueber-uns.scss */
+  .center-wrapper.one .panel-panel {
+    width: 100%;
+    float: none;
+  }
+}
+/* line 29, ../sass/sl-components/_ueber-uns.scss */
+.center-wrapper.one .panel-panel .group-left {
+  width: 30%;
+  margin-right: 2%;
+}
+/* line 34, ../sass/sl-components/_ueber-uns.scss */
+.center-wrapper.one .panel-panel .group-right {
+  width: 68%;
+}
+
+/* line 45, ../sass/sl-components/_ueber-uns.scss */
+.center-wrapper.two .panel-col-first {
+  width: 68%;
+}
+@media (max-width: 767px) {
+  /* line 45, ../sass/sl-components/_ueber-uns.scss */
+  .center-wrapper.two .panel-col-first {
+    width: 100%;
+  }
+}
+/* line 55, ../sass/sl-components/_ueber-uns.scss */
+.center-wrapper.two .panel-col-last {
+  width: 30%;
+  margin-left: 2%;
+}
+@media (max-width: 767px) {
+  /* line 55, ../sass/sl-components/_ueber-uns.scss */
+  .center-wrapper.two .panel-col-last {
+    width: 100%;
+  }
+}
+
 /* CSS code for wohnung detail page
 ** added by criscom
 ** /wohnung/wohnung-1-4-zimmer-wohnung-4-er-wg
@@ -3564,6 +3632,7 @@ h1.object-title {
 
 /* line 17, ../sass/sl-components/_wohnung.scss */
 h1.object-title:hover,
+.page-title:hover,
 .node-wohnung .group-top h2:hover {
   color: #428bca;
 }
@@ -3607,7 +3676,7 @@ h1.object-title:hover,
 
 /* line 79, ../sass/sl-components/_wohnung.scss */
 .node-wohnung .group-top {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
 

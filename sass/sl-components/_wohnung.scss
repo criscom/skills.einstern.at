@@ -7,11 +7,11 @@ h1.object-title
 {
     margin-top: 12px;
     margin-top: .75rem;
-
     text-transform: uppercase;
 }
 
 h1.object-title,
+.page-title,
 .node-wohnung .group-top h2
 {
     &:hover
@@ -78,7 +78,7 @@ h1.object-title,
     }
     .group-top
     {
-        margin-bottom: 25px;
+        margin-bottom: 24px;
         margin-bottom: 1.5rem;
     }
 }
