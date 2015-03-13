@@ -36,7 +36,7 @@ ul.language-switcher-locale-url
 {
     float: right;
 
-    @include breakpoint($mobilescreens)
+    @include breakpoint($max768)
     {
         background-color: $black;
         ul.language-switcher-locale-url

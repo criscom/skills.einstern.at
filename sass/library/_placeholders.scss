@@ -21,6 +21,13 @@
     font-weight: 700;
 }
 
+%base-background {
+    background-color: $breadcrumb-bg;
+    padding: 16px;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
 %header-large
 {
     // font-family: $oswald;
@@ -29,9 +36,20 @@
     font-weight: 700;
 }
 
-%base-background {
-    background-color: $breadcrumb-bg;
-    padding: 16px;
-    padding: 1rem;
-    border-radius: 4px;
+%divider { // creates a dark gray line to divide sections in a background area
+    padding-bottom: 16px;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $gray-light;
 }
+
+%divider-node {
+    @extend %divider;
+    margin-bottom: 32px;
+    margin-bottom: 2rem;
+}
+
+%white-space {
+    margin-bottom: $white-space-px;
+    margin-bottom: $white-space-rem;
+}
+

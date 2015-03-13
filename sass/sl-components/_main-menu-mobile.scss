@@ -6,7 +6,7 @@
 */
 
 // Hide responsive menu
-@include breakpoint($mobilescreens)
+@include breakpoint($max768)
 {
     .block-nice-menus
     {

@@ -7,7 +7,7 @@
 .breadcrumb {
     margin-bottom: 48px;
     margin-bottom: 3rem;
-    @include breakpoint($mobilescreens) {
+    @include breakpoint($max768) {
         margin-top: 24px !important;
         margin-top: 1.5rem !important;
         margin-bottom: 24px;

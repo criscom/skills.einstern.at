@@ -24,7 +24,7 @@
     color: white;
     background-color: $black;
 
-    @include breakpoint($mobilescreens) {
+    @include breakpoint($max768) {
         display: none;
     }
 

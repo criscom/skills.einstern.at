@@ -41,3 +41,17 @@ div.download-file a
 {
     @extend .inline-link;
 }
+
+// hover color for link-less headers and titles
+
+.page-panels h1, // general header of panels page
+.panel-display .panle-panel h2, // header of a panel
+h1.object-title, // wohnung content type
+.page-title, // wohnung content list-style-type
+.node-wohnung .group-top h2, // wohnung content type
+.header-hover // general declaration
+{
+    &:hover {
+        color: $brand-primary;
+    }
+}

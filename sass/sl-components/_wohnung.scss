@@ -16,7 +16,7 @@ h1.object-title,
 {
     &:hover
     {
-        color: $brand-primary;
+        // link-less hover stylings for headers and titles see _fonts.scss
     }
 }
 
@@ -62,10 +62,7 @@ h1.object-title,
 
 .field-name-field-object-reference
 {
-    padding-bottom: 16px;
-    padding-bottom: 1rem;
-
-    border-bottom: 1px solid $gray-light;
+    @extend %divider; // creates a border-bottom divider
 }
 
 .node-wohnung
@@ -78,8 +75,7 @@ h1.object-title,
     }
     .group-top
     {
-        margin-bottom: 24px;
-        margin-bottom: 1.5rem;
+        @extend %white-space;
     }
 }
 .group-wrapper-info
