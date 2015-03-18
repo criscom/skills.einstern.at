@@ -33,13 +33,27 @@ div.download-file a
 
 .inline-link
 {
-    @include link-colors($normal: $red, $hover: black, $visited: lighten($red, 10%));
-    @extend %medium-font-weight;
+    @include link-colors($normal: $black, $hover: $brand-primary, $visited: lighten($black, 10%));
+    text-decoration: underline;
+    @extend %base-font-weight;
 }
 
-.not-front div p a
+div p a,
+.wohnungsdetails-link a,
+li a,
+.link a,
+.field-slideshow-caption-text a
 {
     @extend .inline-link;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+// header font weight
+
+h1 {
+    @extend %base-font-weight;
 }
 
 // hover color for link-less headers and titles

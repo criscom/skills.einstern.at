@@ -3,6 +3,15 @@
 ** /wohnung/wohnung-1-4-zimmer-wohnung-4-er-wg
 */
 
+
+.flippy {
+    padding-left: 16px;
+    padding-left: 1rem;
+    .prev {
+        padding-left: 0;
+    }
+}
+
 h1.object-title
 {
     margin-top: 12px;

@@ -6,6 +6,23 @@
 */
 
 
-header {
-    // background-color: #d9d4d1;
+header.header {
+    background-color: $header-color;
+    @include border-radius(4px);
+    padding: 8px 0;
+
+}
+
+.header__site-link {
+    &:hover {
+        text-decoration: none;
+        color: $brand-primary;
+    }
+    span {
+    font-family: $opensans;
+    font-size: 1.5 * $h1-font-size;
+    padding-left: 16px;
+    padding-left: 1rem;
+
+    }
 }
