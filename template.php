@@ -24,6 +24,10 @@ function master2015_button($variables) {
   return '<input' . drupal_attributes($element['#attributes']) . ' />';
 }
 
+ function master2015_form_user_login_block_alter(&$form, &$form_state, $form_id) {
+   // dsm($form); // output in Krumo with the Devel module
+}
+
 
 /**
  * Override or insert variables into the maintenance page template.
