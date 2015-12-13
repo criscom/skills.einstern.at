@@ -24,8 +24,17 @@ function master2015_button($variables) {
   return '<input' . drupal_attributes($element['#attributes']) . ' />';
 }
 
- function master2015_form_user_login_block_alter(&$form, &$form_state, $form_id) {
-   // dsm($form); // output in Krumo with the Devel module
+// add below code into a template php file where "master2015" is the name of the theme
+// change elements on the user_login_block
+// https://www.drupal.org/node/1167712#comment-6168328
+// https://www.evernote.com/l/ARBwFvpMr5RNc6P-0Qmf1XcqIb5dpb3MySM
+
+  function master2015_form_user_login_block_alter(&$form, &$form_state, $form_id) {
+
+  $form['name']['#title'] = t('Username'); // change the name of the first input element
+  $form['pass']['#title'] = t('Password'); // change the name of the second input element
+  $form['actions']['submit']['#value'] = t ('Anmelden'); // change the name of the action-submit button
+  unset($form['links']['#markup']); // hide markup for link to "Forgot password"
 }
 
 
